@@ -1,5 +1,20 @@
 /* ABOUT PAGE STYLES */
 
+/* Fixed about content at top */
+.about__content-fixed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 80px;
+  z-index: 15;
+  pointer-events: none;
+  max-width: 600px;
+}
+
 .about {
   background-color: var(--color-cream);
   padding: 0;
@@ -19,14 +34,6 @@
   width: 100%;
   height: auto;
   display: block;
-}
-
-/* About content overlay */
-.about__content {
-  position: relative;
-  z-index: 10;
-  padding: 60px 80px;
-  max-width: 600px;
 }
 
 /* Hi greeting */
@@ -67,7 +74,7 @@
   max-width: 500px;
 }
 
-/* Contact section styling */
+/* Contact section styling - same as index.html */
 .contact {
   position: absolute;
   bottom: 60px;
@@ -124,7 +131,7 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .about__content {
+  .about__content-fixed {
     padding: 40px 24px;
     max-width: 100%;
   }

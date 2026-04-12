@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ruth Julien Sutanto — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/works.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">RJS</div>
+    <ul class="nav__links">
+      <li><a href="#about" class="nav__link">About</a></li>
+      <li><a href="#works" class="nav__link">Works</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="about">
+    <div class="hero__content">
+      <p class="hero__name reveal">Ruth Julien Sutanto</p>
+      <h1 class="hero__title reveal delay-1">portfolio</h1>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- WORKS SECTION -->
+  <section class="works" id="works">
+    <div class="works__intro">
+      <p class="works__label reveal">a</p>
+      <p class="works__label reveal delay-1">glimpse of</p>
+      <p class="works__label--script reveal delay-2">my work</p>
+    </div>
+
+    <div class="works__grid">
+
+      <article class="work-card reveal" data-category="Animation">
+        <div class="work-card__image-wrap">
+          <!-- Replace src with your actual image -->
+          <img src="assets/works/animation-ahpek.jpg" alt="Ah Pek Merchandise Design" class="work-card__image" />
+          <div class="work-card__overlay">
+            <span class="work-card__tag">ANIMATION</span>
+            <p class="work-card__subtitle">Ah Pek Merchandise Design</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="work-card work-card--featured reveal delay-1" data-category="Graphic Design">
+        <div class="work-card__image-wrap">
+          <!-- Replace src with your actual image -->
+          <img src="assets/works/graphic-honor.jpg" alt="HONOR Merchandise Design" class="work-card__image" />
+          <div class="work-card__overlay">
+            <span class="work-card__tag">GRAPHIC DESIGN</span>
+            <p class="work-card__subtitle">HONOR Merchandise Design</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="work-card reveal delay-2" data-category="Social Media">
+        <div class="work-card__image-wrap">
+          <!-- Replace src with your actual image -->
+          <img src="assets/works/socialmedia-wacom.jpg" alt="Wacom Movink Campaign" class="work-card__image" />
+          <div class="work-card__overlay">
+            <span class="work-card__tag">SOCIAL MEDIA</span>
+            <p class="work-card__subtitle">Wacom Movink Campaign</p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contact">
+    <h2 class="contact__heading reveal">Let's get in touch!</h2>
+    <ul class="contact__list">
+      <li class="contact__item reveal delay-1">
+        <a href="tel:+6281217336153" class="contact__link">
+          <span>+62 812 1733 6153</span>
+          <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.06 1.18 2 2 0 012 .01h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+          </svg>
+        </a>
+      </li>
+      <li class="contact__item reveal delay-2">
+        <a href="mailto:ruthjlns@gmail.com" class="contact__link">
+          <span>ruthjlns@gmail.com</span>
+          <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 8v4l3 3"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <script src="js/nav.js"></script>
+  <script src="js/reveal.js"></script>
+</body>
+</html>

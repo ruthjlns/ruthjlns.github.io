@@ -1,89 +1,35 @@
 .works {
   background-color: var(--color-cream);
-  padding: 60px 80px;
-  display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: 60px;
-  align-items: start;
-  min-height: 100vh;
-}
-
-/* Left: intro text */
-.works__intro {
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  gap: 30px;
-  position: sticky;
-  top: 120px;
+  align-items: center;
+  justify-content: center;
+  min-height: auto;
 }
 
-.works__label {
-  font-family: var(--font-serif);
-  font-size: 2.8rem;
-  font-weight: 300;
-  line-height: 1.2;
-  color: var(--color-dark);
-  margin: 0;
+/* Full-width image container */
+.works__container {
+  width: 100%;
+  overflow: hidden;
 }
 
-.works__label--script {
-  font-family: var(--font-script);
-  font-size: 4.2rem;
-  color: var(--color-dark);
-  line-height: 1;
+.works__image {
+  width: 100%;
+  height: auto;
   display: block;
-  margin-top: 0.2em;
-  font-style: italic;
 }
 
-/* Right: three images side by side with stagger */
+/* Hide old elements */
+.works__intro {
+  display: none;
+}
+
 .works__grid {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 1.5rem;
-  height: fit-content;
-  align-items: start;
+  display: none;
 }
 
-/* Card */
 .work-card {
-  border-radius: 0;
-  overflow: hidden;
-  cursor: pointer;
-  position: relative;
-  width: 100%;
-}
-
-/* Left card: half height */
-.work-card--left {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-/* Center card: full height (spans both rows) */
-.work-card--featured {
-  grid-column: 2;
-  grid-row: 1 / 3;
-}
-
-/* Right card: full height (spans both rows) */
-.work-card--right {
-  grid-column: 3;
-  grid-row: 1 / 3;
-}
-
-.work-card__image-wrap {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 3/4;
-  background: var(--color-teal);
-  overflow: hidden;
-}
-
-/* Left image: shorter height */
-.work-card--left .work-card__image-wrap {
-  aspect-ratio: 3/2;
+  display: none;
 }
 
 .work-card__image {
@@ -128,28 +74,10 @@
 /* Responsive */
 @media (max-width: 768px) {
   .works {
-    grid-template-columns: 1fr;
-    padding: 40px 24px;
-    gap: 40px;
+    padding: 0;
   }
 
-  .works__intro {
-    position: static;
-  }
-
-  .works__grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-  }
-
-  .work-card--left,
-  .work-card--featured,
-  .work-card--right {
-    grid-column: 1 !important;
-    grid-row: auto !important;
-  }
-
-  .work-card--left .work-card__image-wrap {
-    aspect-ratio: 3/4;
+  .works__image {
+    width: 100%;
   }
 }

@@ -21,34 +21,7 @@
 
 /* Left side text overlay */
 .works__intro {
-  position: absolute;
-  bottom: 150px;
-  left: 60px;
-  z-index: 20;
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  pointer-events: none;
-  top: auto;
-}
-
-.works__label {
-  font-family: var(--font-serif);
-  font-size: 2.8rem;
-  font-weight: 300;
-  line-height: 1.2;
-  color: var(--color-dark);
-  margin: 0;
-}
-
-.works__label--script {
-  font-family: var(--font-script);
-  font-size: 4.2rem;
-  color: var(--color-dark);
-  line-height: 1;
-  display: block;
-  margin-top: 0;
-  font-style: italic;
+  display: none;
 }
 
 .work-card__image {

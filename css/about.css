@@ -12,6 +12,75 @@
   padding: 80px 80px;
   z-index: 15;
   pointer-events: none;
+  max-width: 700px;
+}
+
+/* Intro header with profile image and text */
+.about__intro-header {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+/* Profile image */
+.about__profile-image {
+  flex-shrink: 0;
+  width: 200px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.about__profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Text wrapper for greeting and intro */
+.about__intro-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Hi greeting */
+.about__intro {
+  margin-bottom: 0;
+}
+
+.about__greeting {
+  font-family: var(--font-serif);
+  font-size: clamp(3rem, 8vw, 5rem);
+  font-weight: 300;
+  color: var(--color-white);
+  margin: 0;
+  line-height: 0.9;
+}
+
+.about__intro-text {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-white);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Bio text */
+.about__bio {
+  margin-bottom: 60px;
+}
+
+.about__bio-text {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: var(--color-white);
+  line-height: 1.8;
+  margin: 0;
   max-width: 600px;
 }
 
@@ -34,44 +103,6 @@
   width: 100%;
   height: auto;
   display: block;
-}
-
-/* Hi greeting */
-.about__intro {
-  margin-bottom: 40px;
-}
-
-.about__greeting {
-  font-family: var(--font-serif);
-  font-size: clamp(3rem, 8vw, 5rem);
-  font-weight: 300;
-  color: var(--color-dark);
-  margin: 0 0 20px 0;
-  line-height: 0.9;
-}
-
-.about__intro-text {
-  font-family: var(--font-sans);
-  font-size: 1rem;
-  font-weight: 400;
-  color: var(--color-dark);
-  line-height: 1.6;
-  margin: 0;
-}
-
-/* Bio text */
-.about__bio {
-  margin-bottom: 60px;
-}
-
-.about__bio-text {
-  font-family: var(--font-sans);
-  font-size: 0.95rem;
-  font-weight: 300;
-  color: var(--color-dark);
-  line-height: 1.8;
-  margin: 0;
-  max-width: 500px;
 }
 
 /* Contact section styling - same as index.html */

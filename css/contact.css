@@ -1,8 +1,13 @@
 .contact {
-  background-color: var(--color-cream);
-  padding: var(--space-xl) var(--space-lg);
-  text-align: center;
-  border-top: 1px solid rgba(15, 31, 61, 0.1);
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  background-color: transparent;
+  padding: 0;
+  text-align: right;
+  border-top: none;
+  z-index: 20;
+  max-width: 400px;
 }
 
 .contact__heading {
@@ -17,7 +22,7 @@
 .contact__list {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   gap: var(--space-sm);
 }
 
@@ -33,6 +38,7 @@
   align-items: center;
   gap: 0.5rem;
   transition: opacity 0.2s;
+  flex-direction: row-reverse;
 }
 
 .contact__link:hover {

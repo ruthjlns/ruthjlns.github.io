@@ -5,14 +5,13 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: auto;
+  width: calc(100% - 160px);
   background-color: transparent;
   display: flex;
   flex-direction: column;
   padding: 80px 80px;
   z-index: 15;
   pointer-events: none;
-  max-width: 700px;
 }
 
 /* Intro header with profile image and text */
@@ -26,8 +25,8 @@
 /* Profile image */
 .about__profile-image {
   flex-shrink: 0;
-  width: 200px;
-  height: 250px;
+  width: 280px;
+  height: 350px;
   overflow: hidden;
   border-radius: 4px;
 }

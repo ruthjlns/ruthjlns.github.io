@@ -51,3 +51,10 @@
   stroke: var(--color-dark);
   flex-shrink: 0;
 }
+
+.contact__icon__White {
+  width: 20px;
+  height: 20px;
+  stroke: white;
+  flex-shrink: 0;
+}

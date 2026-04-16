@@ -27,7 +27,7 @@
 }
 
 .hero__name {
-  font-family: var(--font-sans);
+  font-family: var(--font-ethika);
   font-size: 0.9rem;
   font-weight: 300;
   letter-spacing: 0.05em;
@@ -37,7 +37,7 @@
 }
 
 .hero__title {
-  font-family: var(--font-serif);
+  font-family: var(--font-ethika);
   font-size: clamp(5rem, 13vw, 11rem);
   font-weight: 300;
   line-height: 0.9;

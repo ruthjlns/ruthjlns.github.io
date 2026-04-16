@@ -8,3 +8,29 @@ window.addEventListener('scroll', () => {
     nav.classList.remove('scrolled');
   }
 });
+
+// Dropdown menu functionality
+const dropdownLink = document.querySelector('.nav__link-dropdown');
+const dropdown = document.querySelector('.nav__dropdown');
+
+if (dropdownLink && dropdown) {
+  dropdownLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    dropdown.classList.toggle('active');
+  });
+
+  // Close dropdown when clicking on a dropdown link
+  const dropdownLinks = dropdown.querySelectorAll('.nav__dropdown-link');
+  dropdownLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      dropdown.classList.remove('active');
+    });
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav__item-dropdown')) {
+      dropdown.classList.remove('active');
+    }
+  });
+}

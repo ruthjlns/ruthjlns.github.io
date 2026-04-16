@@ -33,7 +33,7 @@
   letter-spacing: 0.05em;
   color: #98bcc7;
   opacity: 1;
-  margin-bottom: var(--space-xs);
+  margin-bottom: 0.25rem;
 }
 
 .hero__title {

@@ -65,12 +65,24 @@
   position: relative;
 }
 
+.nav__link-dropdown {
+  padding-bottom: 2px;
+}
+
 .nav__link-dropdown::after {
   content: '▼';
   display: inline-block;
   font-size: 0.6rem;
   margin-left: 0.4rem;
   transition: transform 0.3s var(--ease-out);
+  position: static;
+  background: none;
+  width: auto;
+  height: auto;
+}
+
+.nav__link-dropdown:hover::after {
+  transform: rotate(180deg);
 }
 
 .nav__item-dropdown:hover .nav__link-dropdown::after {

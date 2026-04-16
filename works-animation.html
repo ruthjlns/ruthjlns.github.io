@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Animation — Ruth Julien Sutanto Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Pinyon+Script&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/variables.css" />
   <link rel="stylesheet" href="css/base.css" />
@@ -14,31 +17,74 @@
   <link rel="stylesheet" href="css/hero.css" />
   <link rel="stylesheet" href="css/animations.css" />
   <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
     .works-category-content {
       min-height: 100vh;
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
       padding: var(--space-lg);
-      background: linear-gradient(135deg, rgba(15, 31, 61, 0.5), rgba(45, 61, 100, 0.5));
+      background-image: url('assets/images/assetanimation1pps.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      position: relative;
     }
+
+    .works-category-content::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.15);
+      pointer-events: none;
+    }
+
     .works-category-content h1 {
       font-family: var(--font-serif);
       font-size: 3rem;
       color: var(--color-white);
       text-align: center;
-      opacity: 0.9;
+      opacity: 0.95;
+      position: relative;
+      z-index: 1;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    @media (max-width: 768px) {
+      .works-category-content h1 {
+        font-size: 2rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .works-category-content h1 {
+        font-size: 1.5rem;
+      }
+
+      .works-category-content {
+        background-attachment: scroll;
+      }
     }
   </style>
 </head>
-<body>
 
+<body>
   <!-- NAVIGATION -->
   <nav class="nav" id="nav">
     <div class="nav__logo">RJS</div>
     <ul class="nav__links">
-        <li><a href="index.html" class="nav__link">Home</a></li>
-        <li><a href="about.html" class="nav__link">About</a></li>
+      <li><a href="index.html" class="nav__link">Home</a></li>
+      <li><a href="about.html" class="nav__link">About</a></li>
       <li class="nav__item-dropdown">
         <a href="index.html#works" class="nav__link nav__link-dropdown">Works</a>
         <ul class="nav__dropdown">
@@ -58,4 +104,5 @@
   <script src="js/nav.js"></script>
   <script src="js/reveal.js"></script>
 </body>
+
 </html>

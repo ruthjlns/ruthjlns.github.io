@@ -36,11 +36,27 @@
 
 .grid-item:hover img {
   filter: blur(10px);
-  color: black;
+}
+
+.grid-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 4;
+}
+
+.grid-item:hover::before {
+  opacity: 1;
 }
 
 .grid-item::after {
-font-family: 'SansSerifBold';
+  font-family: 'SansSerifBold';
   content: attr(data-text);
   position: absolute;
   top: 50%;
@@ -48,12 +64,13 @@ font-family: 'SansSerifBold';
   transform: translate(-50%, -50%);
   color: #faf2e7;
   font-size: 1.5rem;
-  text-align: center;              /* Alignment */
-  letter-spacing: 2px;             /* Spacing */
+  text-align: center;
+  letter-spacing: 2px;
+  white-space: pre-wrap;
+  max-width: 80%;
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 5;
-  max-width: 80%;
 }
 
 .grid-item:hover::after {

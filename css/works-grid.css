@@ -35,7 +35,7 @@
 }
 
 .grid-item:hover img {
-  filter: blur(5px);
+  filter: blur(10px);
 }
 
 .grid-item::after {
@@ -45,7 +45,7 @@ font-family: 'SansSerifBold';
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #101131;
+  color: #faf2e7;
   font-size: 1.5rem;
   text-align: center;              /* Alignment */
   letter-spacing: 2px;             /* Spacing */

@@ -54,6 +54,14 @@
 .grid-item:hover::before {
   opacity: 1;
 }
+.grid-item__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 6;
+  pointer-events: auto;
+}
 
 .grid-item::after {
   font-family: 'SansSerifBold';
@@ -68,9 +76,11 @@
   letter-spacing: 2px;
   white-space: pre-wrap;
   max-width: 80%;
+  line-height: 1.2;
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 5;
+  pointer-events: none;
 }
 
 .grid-item:hover::after {
@@ -81,12 +91,4 @@
   display: block;
   width: 100%;
   height: 100%;
-}
-
-.grid-item__link {
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: 3;
 }

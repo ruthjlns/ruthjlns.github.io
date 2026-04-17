@@ -57,8 +57,6 @@
   line-height: 0.9;
   color: var(--color-black);
   letter-spacing: -0.02em;
-  margin-left: 20px;
-  margin-top: 50px;
 }
 
 .hero--small .hero__name {
@@ -69,6 +67,5 @@
   color: black;
   opacity: 1;
   margin-bottom: 0.25rem;
-  margin-left: 20px;
-  margin-top: 50px;
+  left: 20px;
 }

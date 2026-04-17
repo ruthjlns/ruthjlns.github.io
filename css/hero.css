@@ -49,3 +49,11 @@
 .hero__scroll-hint {
   display: none;
 }
+
+.hero--small .hero__title {
+  font-size: 2rem;
+}
+
+.hero--small .hero__name {
+  font-size: 0.9rem;
+}

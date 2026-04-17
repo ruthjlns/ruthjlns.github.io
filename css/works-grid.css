@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'SansSerifBold';
+  src: url('../assets/fonts/sansserifflf-font/Sansserifbldflf-y1lm.otf') format('opentype');
+}
+
 .works__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -34,6 +39,7 @@
 }
 
 .grid-item::after {
+font-family: 'SansSerifBold';
   content: attr(data-text);
   position: absolute;
   top: 50%;
@@ -41,6 +47,8 @@
   transform: translate(-50%, -50%);
   color: white;
   font-size: 1.5rem;
+  text-align: center;              /* Alignment */
+  letter-spacing: 2px;             /* Spacing */
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 5;

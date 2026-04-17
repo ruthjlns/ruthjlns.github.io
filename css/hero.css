@@ -52,7 +52,7 @@
 
 .hero--small .hero__title {
   font-family: var(--font-ethika);
-  font-size: clamp(7rem, 7vw, 7rem);
+  font-size: 50px;
   font-weight: 300;
   line-height: 0.9;
   color: var(--color-black);
@@ -61,7 +61,7 @@
 
 .hero--small .hero__name {
   font-family: var(--font-ethika);
-  font-size: 8rem;
+  font-size: 25px;
   font-weight: 300;
   letter-spacing: 0.05em;
   color: black;

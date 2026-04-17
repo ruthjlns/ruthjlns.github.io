@@ -69,6 +69,7 @@
 .grid-item::after {
   font-family: 'SansSerifBold';
   content: attr(data-text);
+  display: block;
   position: absolute;
   top: 50%;
   left: 50%;

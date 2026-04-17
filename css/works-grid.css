@@ -36,6 +36,7 @@
 
 .grid-item:hover img {
   filter: blur(10px);
+  color: black;
 }
 
 .grid-item::after {
@@ -52,6 +53,7 @@ font-family: 'SansSerifBold';
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 5;
+  max-width: 80%;
 }
 
 .grid-item:hover::after {

@@ -52,19 +52,21 @@
 
 .hero--small .hero__title {
   font-family: var(--font-ethika);
-  font-size: 50px;
+  font-size: 70px;
   font-weight: 300;
   line-height: 0.9;
   color: var(--color-black);
   letter-spacing: -0.02em;
+  margin-left: 20px;
 }
 
 .hero--small .hero__name {
   font-family: var(--font-ethika);
-  font-size: 25px;
+  font-size: 40px;
   font-weight: 300;
   letter-spacing: 0.05em;
   color: black;
   opacity: 1;
   margin-bottom: 0.25rem;
+  margin-left: 20px;
 }

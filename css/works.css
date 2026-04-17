@@ -1,22 +1,19 @@
-.works {
-  background-color: var(--color-cream);
-  padding: 0;
-  position: relative;
-  width: 100%;
-  overflow-x: hidden;
-}
-
 /* Full-width image container - Background */
 .works__container {
   position: relative;
-  width: 100%;
-  z-index: 1;
 }
 
 .works__image {
-  width: 100%;
-  height: auto;
-  display: block;
+  display: none;
+}
+
+.works {
+  background-image: url('assets/images/assetproduct1pps.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 /* Left side text overlay */

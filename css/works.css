@@ -116,10 +116,10 @@
 
 .works__gif-container {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 35%;
+    left: 40%;
     transform: translate(-50%, -50%);
-    width: 60%; /* Adjust this percentage to make the GIF bigger or smaller */
+    width: 60%;
     z-index: 5;
 }
 

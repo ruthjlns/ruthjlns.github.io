@@ -88,20 +88,31 @@
   }
 }
 
-.works__gif-container {
-    position: absolute;
-    top: 40%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    z-index: 5;
-}
-
 .works__gif {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 4px; /* Optional: matches your card style */
+    border-radius: 4px;
+}
+
+/* Queen tarot gif — portrait, centered on card area */
+.works__gif-container--queen {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+    z-index: 5;
+}
+
+/* Ah Pek gif — landscape, centered on background */
+.works__gif-container--ahpek {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    z-index: 5;
 }
 
 /* Ensure the parent container can hold absolute elements */

@@ -81,7 +81,7 @@
   z-index: 10;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 16px;
+  gap: 50px;
   width: 88%;
   align-items: stretch;
 }

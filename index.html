@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ruth Julien Sutanto — Graphic designer from Surabaya, Indonesia. Portfolio showcasing product design, app & web, and animation work." />
   <title>Ruth Julien Sutanto — Portfolio</title>
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/variables.css" />
@@ -18,13 +19,13 @@
 <body>
 
   <!-- NAVIGATION -->
-  <nav class="nav" id="nav">
+  <nav class="nav" id="nav" aria-label="Main navigation">
     <div class="nav__logo"></div>
     <ul class="nav__links">
       <li><a href="index.html" class="nav__link">Home</a></li>
       <li><a href="about.html" class="nav__link">About</a></li>
       <li class="nav__item-dropdown">
-        <a href="#works" class="nav__link nav__link-dropdown">Projects</a>
+        <a href="#works" class="nav__link nav__link-dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
         <ul class="nav__dropdown">
           <li><a href="projects/product-design/index.html" class="nav__dropdown-link">Product Design</a></li>
           <li><a href="projects/app-web/index.html" class="nav__dropdown-link">App & Web</a></li>
@@ -34,50 +35,47 @@
     </ul>
   </nav>
 
-  <!-- HERO SECTION (Fixed overlay - OUTSIDE works) -->
-  <section class="hero" id="about">
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
     <div class="hero__content">
       <p class="hero__name reveal">Ruth Julien Sutanto</p>
       <h1 class="hero__title reveal delay-1">portfolio</h1>
     </div>
   </section>
 
-  <!-- MAIN WORKS CONTAINER (Scrollable) -->
+  <!-- MAIN WORKS CONTAINER -->
   <section class="works" id="works">
-    <!-- Background Image -->
     <div class="works__container">
-      <img src="assets/images/ppsfinalhome.png" alt="Ruth Julien Sutanto Portfolio" class="works__image"
-        loading="lazy" />
+      <img src="assets/images/ppsfinalhome.png" alt="Ruth Julien Sutanto Portfolio" class="works__image" loading="lazy" />
     </div>
 
-    <!-- CONTACT SECTION (Bottom right overlay) -->
-    <section class="contact" id="contact">
+    <!-- CONTACT -->
+    <footer class="contact" id="contact">
       <h2 class="contact__heading reveal">Let's get in touch!</h2>
       <ul class="contact__list">
         <li class="contact__item reveal delay-1">
           <a href="tel:+6281217336153" class="contact__link">
             <span>+62 812 1733 6153</span>
-            <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path
-                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.06 1.18 2 2 0 012 .01h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z" />
+            <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.06 1.18 2 2 0 012 .01h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z" />
             </svg>
           </a>
         </li>
         <li class="contact__item reveal delay-2">
           <a href="mailto:ruthjlns@gmail.com" class="contact__link">
             <span>ruthjlns@gmail.com</span>
-            <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
               <circle cx="12" cy="12" r="10" />
               <path d="M12 8v4l3 3" />
             </svg>
           </a>
         </li>
       </ul>
-    </section>
+    </footer>
   </section>
 
-  <script src="js/nav.js"></script>
-  <script src="js/reveal.js"></script>
+  <script src="js/nav.js" defer></script>
+  <script src="js/reveal.js" defer></script>
 </body>
 
 </html>

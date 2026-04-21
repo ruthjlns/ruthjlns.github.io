@@ -41,7 +41,7 @@
   font-size: clamp(7rem, 15vw, 15rem);
   font-weight: 300;
   line-height: 0.9;
-  color: var(--color-white);
+  color: #faf2e7;
   letter-spacing: -0.02em;
 }
 
@@ -55,7 +55,7 @@
   font-size: 70px;
   font-weight: 300;
   line-height: 0.9;
-  color: var(--color-black);
+  color: #101310;
   letter-spacing: -0.02em;
 }
 
@@ -64,7 +64,7 @@
   font-size: 20px;
   font-weight: 300;
   letter-spacing: 0.05em;
-  color: black;
+  color: #101310;
   opacity: 1;
   margin-bottom: 0.25rem;
   left: 20px;

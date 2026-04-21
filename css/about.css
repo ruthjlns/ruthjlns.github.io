@@ -59,7 +59,7 @@
   font-family: var(--font-serif);
   font-size: clamp(4rem, 10vw, 7rem);
   font-weight: 300;
-  color: var(--color-white);
+  color: #faf2e7;
   margin: 0;
   line-height: 0.9;
 }
@@ -68,7 +68,7 @@
   font-family: var(--font-sans);
   font-size: 1.3rem;
   font-weight: 400;
-  color: var(--color-white);
+  color: #98bcc7;
   line-height: 1.6;
   margin: 0;
 }
@@ -83,14 +83,14 @@
   font-family: var(--font-sans);
   font-size: 1.1rem;
   font-weight: 300;
-  color: var(--color-white);
+  color: #faf2e7;
   line-height: 1.8;
   margin: 0;
   max-width: none;
 }
 
 .about {
-  background-color: var(--color-cream);
+  background-color: #faf2e7;
   padding: 0;
   position: relative;
   width: 100%;

@@ -110,13 +110,17 @@
 }
 
 /* Dark nav variant for project detail pages */
-.nav--dark .nav__link,
-.nav--dark .nav__dropdown-link {
+.nav--dark .nav__link {
   color: #101310;
 }
 
 .nav--dark .nav__link::after {
   background: #101310;
+}
+
+/* Dropdown links always stay white (dark dropdown background) */
+.nav--dark .nav__dropdown-link {
+  color: #faf2e7;
 }
 
 .nav--dark.scrolled .nav__link,

@@ -113,7 +113,7 @@
 /* Modifier for the 3x1 Portrait layout */
 .works-grid--3x1 {
   grid-template-columns: repeat(3, 1fr) !important;
-  bottom: 15%;
+  bottom: 30%;
 }
 
 /* ── Product Design Grid (merged from works-grid.css) ── */

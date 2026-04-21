@@ -4,40 +4,27 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KBS pattern design</title>
+    <title>pitbull album design</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Pinyon+Script&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/variables.css" />
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/nav.css" />
-    <link rel="stylesheet" href="css/hero.css" />
-    <link rel="stylesheet" href="css/works.css" />
-    <link rel="stylesheet" href="css/contact.css" />
-    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/hero.css" />
+    <link rel="stylesheet" href="../css/works.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <link rel="stylesheet" href="../css/animations.css" />
 
     <style>
-        /* Dark nav override for light-background pages */
-        #nav .nav__link,
-        #nav .nav__dropdown-link {
-            color: #111 !important;
-        }
-
-        #nav .nav__link::after {
-            background: #111 !important;
-        }
-
-        /* Keep scrolled state readable too */
-        #nav.scrolled .nav__link,
-        #nav.scrolled .nav__dropdown-link {
-            color: var(--color-white) !important;
-        }
-
-        #nav.scrolled .nav__link::after {
-            background: var(--color-white) !important;
+        /* Always dark nav background for light-background pages */
+        #nav {
+            background: rgba(15, 31, 61, 0.85) !important;
+            backdrop-filter: blur(12px) !important;
+            -webkit-backdrop-filter: blur(12px) !important;
         }
     </style>
 </head>
@@ -77,7 +64,8 @@
     <section class="works" id="works">
         <!-- Background Image -->
         <div class="works__container">
-            <img src="assets/images/ppsproduct4.png" alt="KBS pattern design" class="works__image" loading="lazy" />
+            <img src="../assets/images/ppsproduct1.png" alt="pitbull album design" class="works__image"
+                loading="lazy" />
         </div>
 
         <!-- CONTACT SECTION -->
@@ -108,8 +96,8 @@
         </section>
     </section>
 
-    <script src="js/nav.js"></script>
-    <script src="js/reveal.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/reveal.js"></script>
 </body>
 
 </html>

@@ -39,21 +39,26 @@
         }
 
         .works__gif-container {
-            display: flex;
-            justify-content: flex-start;
-            width: 100%;
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            z-index: 5;
         }
 
         .works__gif {
-            width: 500px;       
-            height: auto;       
-            margin-top: 150px;
-            margin-bottom: 50px;
-            margin-left: 20px;
-            
-            /* Optional: If you want it to overlap or move pixel-perfectly */
-            /* position: relative; */
-            /* left: -50px; */
+            width: 50%;
+            height: auto;
+            display: block;
+            border-radius: 4px;
+            /* Optional: matches your card style */
+        }
+
+        /* Ensure the parent container can hold absolute elements */
+        .works__container {
+            position: relative;
+            width: 50%%;
         }
     </style>
 </head>
@@ -89,10 +94,12 @@
 
     <section class="works" id="works">
         <div class="works__container">
-            <img src="assets/images/Animation/ppsfinalanim1.png" alt="queen of pentacles tarot card" class="works__image" loading="lazy" />
-            
+            <img src="assets/images/Animation/ppsfinalanim1.png" alt="queen of pentacles tarot card"
+                class="works__image" loading="lazy" />
+
             <div class="works__gif-container">
-                <img src="assets/images/Animation/queenanimation.gif" alt="Queen of Pentacles Animation" class="works__gif" />
+                <img src="assets/images/Animation/queenanimation.gif" alt="Queen of Pentacles Animation"
+                    class="works__gif" />
             </div>
         </div>
 

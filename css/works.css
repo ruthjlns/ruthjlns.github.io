@@ -72,17 +72,17 @@
   }
 }
 
+/* ── Grid ── */
 .works-grid {
   position: absolute;
-  bottom: 18%;        /* sits above the contact section */
+  bottom: 18%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 16px;
-  width: 100%;
-  max-width: 3000px;
+  width: 88%;
 }
 
 .works-card {
@@ -100,21 +100,14 @@
 .works-card img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
 }
 
-/* Portrait card — taller, like the Queen poster */
 .works-card--portrait {
-  aspect-ratio: 3 / 4;
+  /* natural height from image */
 }
 
-/* Landscape card — white bg, image contained, like the Smash card */
 .works-card--landscape {
-  aspect-ratio: 3 / 2;
-}
-
-.works-card--landscape img {
-  object-fit: contain;
-  padding: 16px;
+  /* natural height, transparent bg */
 }

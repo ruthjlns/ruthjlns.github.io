@@ -37,12 +37,26 @@
         #nav.scrolled .nav__link::after {
             background: #faf2e7 !important;
         }
+
+        /* --- STYLES FOR THE GIF --- */
+        .works__gif-container {
+            display: flex;
+            justify-content: center; /* Centers horizontally */
+            width: 100%;
+        }
+
+        .works__gif {
+            width: 400px;       
+            height: auto;       
+            margin-top: 50px;   
+            margin-bottom: 50px;
+            margin-left: 100px; 
+        }
     </style>
 </head>
 
 <body>
 
-    <!-- NAVIGATION -->
     <nav class="nav" id="nav">
         <div class="nav__logo"></div>
         <ul class="nav__links">
@@ -59,7 +73,6 @@
         </ul>
     </nav>
 
-    <!-- HERO SECTION (Fixed overlay - OUTSIDE works) -->
     <section class="hero hero--small" id="about">
         <div class="hero__content" style="margin-top: 20px; left: 50px; top: 60px;">
             <h1 class="hero__title reveal delay-1">queen of pentacles</h1>
@@ -71,17 +84,15 @@
         </div>
     </section>
 
-    <!-- MAIN WORKS CONTAINER (Scrollable) -->
     <section class="works" id="works">
-    <div class="works__container">
-        <img src="assets/images/Animation/ppsfinalanim1.png" alt="queen of pentacles tarot card" class="works__image" loading="lazy" />
-        
-        <div class="works__gif-container">
-            <img src="assets/images/Animation/queenanimation.gif" alt="Queen of Pentacles Animation" class="works__gif" />
+        <div class="works__container">
+            <img src="assets/images/Animation/ppsfinalanim1.png" alt="queen of pentacles tarot card" class="works__image" loading="lazy" />
+            
+            <div class="works__gif-container">
+                <img src="assets/images/Animation/queenanimation.gif" alt="Queen of Pentacles Animation" class="works__gif" />
+            </div>
         </div>
-    </div>
 
-        <!-- CONTACT SECTION (Bottom right overlay) -->
         <section class="contact" id="contact">
             <h2 class="contact__heading reveal">Let's get in touch!</h2>
             <ul class="contact__list">

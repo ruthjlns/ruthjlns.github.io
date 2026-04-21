@@ -81,8 +81,8 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 16px;
-  width: 88%;
-  max-width: 860px;
+  width: 100%;
+  max-width: 3000px;
 }
 
 .works-card {
@@ -112,7 +112,6 @@
 /* Landscape card — white bg, image contained, like the Smash card */
 .works-card--landscape {
   aspect-ratio: 3 / 2;
-  background: #ffffff;
 }
 
 .works-card--landscape img {

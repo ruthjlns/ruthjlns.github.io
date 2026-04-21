@@ -2,20 +2,13 @@
   /* Colors */
   --color-navy:   #0f1f3d;
   --color-cream:  #f5f0e8;
-  --color-teal:   #3d6472;
-  --color-gold:   #c9a84c;
-  --color-white:  #ffffff;
   --color-dark:   #111111;
 
   /* Typography */
-  --font-serif:             'Cormorant Garamond', Georgia, serif;
-  --font-sans:              'DM Sans', sans-serif;
-  --font-script:            'Pinyon Script', cursive;
   --font-ethika:            'Ethika', sans-serif;
-  --font-sans-serif-book:   'SansSerifBookFlf', sans-serif;  /* ← add this */
+  --font-sans-serif-book:   'SansSerifBookFlf', sans-serif;
 
   /* Spacing */
-  --space-xs:  0.5rem;
   --space-sm:  1rem;
   --space-md:  2rem;
   --space-lg:  4rem;

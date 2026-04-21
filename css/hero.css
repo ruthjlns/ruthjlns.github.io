@@ -15,11 +15,6 @@
   pointer-events: none;
 }
 
-/* Subtle grain texture overlay */
-.hero::before {
-  display: none;
-}
-
 .hero__content {
   position: relative;
   z-index: 1;
@@ -43,11 +38,6 @@
   line-height: 0.9;
   color: #faf2e7;
   letter-spacing: -0.02em;
-}
-
-/* Scroll hint */
-.hero__scroll-hint {
-  display: none;
 }
 
 .hero--small .hero__title {

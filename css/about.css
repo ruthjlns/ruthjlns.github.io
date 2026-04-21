@@ -112,68 +112,6 @@
   display: block;
 }
 
-/* Contact section styling - same as index.html */
-.contact {
-  position: absolute;
-  bottom: 60px;
-  right: 60px;
-  background-color: transparent;
-  padding: 0;
-  text-align: right;
-  border-top: none;
-  z-index: 20;
-  max-width: 500px;
-}
-
-.contact__heading {
-  font-family: var(--font-ethika);
-  font-size: clamp(1.8rem, 3vw, 2.5rem);
-  font-weight: 400;
-  color: var(--color-dark);
-  margin-bottom: var(--space-md);
-  letter-spacing: -0.01em;
-}
-
-.contact__list {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 0.8rem;
-}
-
-.contact__item {
-  font-family: var(--font-sans-serif-book);
-  font-size: 0.85rem;
-  font-weight: 300;
-  color: var(--color-dark);
-}
-
-.contact__link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  transition: opacity 0.2s;
-  flex-direction: row-reverse;
-}
-
-.contact__link:hover {
-  opacity: 0.6;
-}
-
-.contact__icon {
-  width: 20px;
-  height: 20px;
-  stroke: var(--color-dark);
-  flex-shrink: 0;
-}
-
-.contact__icon__White {
-  width: 20px;
-  height: 20px;
-  stroke: white;
-  flex-shrink: 0;
-}
-
 /* Responsive */
 @media (max-width: 768px) {
   .about__content-fixed {

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>leftlover</title>
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/variables.css" />
+    <link rel="stylesheet" href="../../css/base.css" />
+    <link rel="stylesheet" href="../../css/nav.css" />
+    <link rel="stylesheet" href="../../css/hero.css" />
+    <link rel="stylesheet" href="../../css/works.css" />
+    <link rel="stylesheet" href="../../css/contact.css" />
+    <link rel="stylesheet" href="../../css/animations.css" />
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="nav nav--dark" id="nav">
+        <div class="nav__logo"></div>
+        <ul class="nav__links">
+            <li><a href="../../index.html" class="nav__link">Home</a></li>
+            <li><a href="../../about.html" class="nav__link">About</a></li>
+            <li class="nav__item-dropdown">
+                <a href="#works" class="nav__link nav__link-dropdown">Projects</a>
+                <ul class="nav__dropdown">
+                    <li><a href="../product-design/index.html" class="nav__dropdown-link">Product Design</a></li>
+                    <li><a href="../app-web/index.html" class="nav__dropdown-link">App & Web</a></li>
+                    <li><a href="../animation/index.html" class="nav__dropdown-link">Animation</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero hero--small" id="about">
+        <div class="hero__content" style="margin-top: 20px; left: 50px; top: 60px;">
+            <h1 class="hero__title reveal delay-1">leftlover</h1>
+        </div>
+        <div class="hero__content hero__content--bottom" style="margin-top: 20px; left: 50px; top: 80px;">
+            <p class="hero__name reveal">year accomplished: 2025</p>
+            <p class="hero__name reveal">role: graphic designer & prototype making - individual work</p>
+        </div>
+    </section>
+
+    <!-- MAIN WORKS CONTAINER -->
+    <section class="works" id="works">
+        <div class="works__container">
+            <img src="../../assets/images/ProductDesign/ppsfinalprod2.png" alt="leftlover" class="works__image" loading="lazy" />
+        </div>
+
+        <section class="contact" id="contact">
+            <h2 class="contact__heading reveal">Let's get in touch!</h2>
+            <ul class="contact__list">
+                <li class="contact__item reveal delay-1">
+                    <a href="tel:+6281217336153" class="contact__link">
+                        <span>+62 812 1733 6153</span>
+                        <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.06 1.18 2 2 0 012 .01h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="contact__item reveal delay-2">
+                    <a href="mailto:ruthjlns@gmail.com" class="contact__link">
+                        <span>ruthjlns@gmail.com</span>
+                        <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 8v4l3 3" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </section>
+
+    <script src="../../js/nav.js"></script>
+    <script src="../../js/reveal.js"></script>
+</body>
+
+</html>

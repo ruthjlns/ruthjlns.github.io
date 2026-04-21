@@ -19,11 +19,11 @@
 }
 
 .nav__logo {
-  font-family: var(--font-serif);
+  font-family: var(--font-ethika);
   font-size: 1.1rem;
   font-weight: 600;
   letter-spacing: 0.15em;
-  color: var(--color-white);
+  color: #ffffff;
   opacity: 0.85;
 }
 
@@ -107,4 +107,23 @@
 
 .nav__dropdown-link:hover {
   background: rgba(255, 255, 255, 0.1);
+}
+
+/* Dark nav variant for project detail pages */
+.nav--dark .nav__link,
+.nav--dark .nav__dropdown-link {
+  color: #101310;
+}
+
+.nav--dark .nav__link::after {
+  background: #101310;
+}
+
+.nav--dark.scrolled .nav__link,
+.nav--dark.scrolled .nav__dropdown-link {
+  color: #faf2e7;
+}
+
+.nav--dark.scrolled .nav__link::after {
+  background: #faf2e7;
 }

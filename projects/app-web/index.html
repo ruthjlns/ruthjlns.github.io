@@ -4,20 +4,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Animation</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Pinyon+Script&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/variables.css" />
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/nav.css" />
-  <link rel="stylesheet" href="css/hero.css" />
-  <link rel="stylesheet" href="css/works.css" />
-  <link rel="stylesheet" href="css/contact.css" />
-  <link rel="stylesheet" href="css/animations.css" />
+  <title>App & Web</title>
+  <link rel="stylesheet" href="../../css/reset.css" />
+  <link rel="stylesheet" href="../../css/variables.css" />
+  <link rel="stylesheet" href="../../css/base.css" />
+  <link rel="stylesheet" href="../../css/nav.css" />
+  <link rel="stylesheet" href="../../css/hero.css" />
+  <link rel="stylesheet" href="../../css/works.css" />
+  <link rel="stylesheet" href="../../css/contact.css" />
+  <link rel="stylesheet" href="../../css/animations.css" />
 </head>
 
 <body>
@@ -26,14 +21,14 @@
   <nav class="nav" id="nav">
     <div class="nav__logo"></div>
     <ul class="nav__links">
-      <li><a href="index.html" class="nav__link">Home</a></li>
-      <li><a href="about.html" class="nav__link">About</a></li>
+      <li><a href="../../index.html" class="nav__link">Home</a></li>
+      <li><a href="../../about.html" class="nav__link">About</a></li>
       <li class="nav__item-dropdown">
         <a href="#works" class="nav__link nav__link-dropdown">Projects</a>
         <ul class="nav__dropdown">
-          <li><a href="works-product-design.html" class="nav__dropdown-link">Product Design</a></li>
-          <li><a href="works-app-web.html" class="nav__dropdown-link">App & Web</a></li>
-          <li><a href="works-animation.html" class="nav__dropdown-link">Animation</a></li>
+          <li><a href="../product-design/index.html" class="nav__dropdown-link">Product Design</a></li>
+          <li><a href="../app-web/index.html" class="nav__dropdown-link">App & Web</a></li>
+          <li><a href="../animation/index.html" class="nav__dropdown-link">Animation</a></li>
         </ul>
       </li>
     </ul>
@@ -41,21 +36,26 @@
 
   <!-- MAIN WORKS CONTAINER (Scrollable) -->
   <section class="works" id="works">
-    <!-- Background Image -->
     <div class="works__container">
-      <img src="assets/images/ppsfinalsub3.png" alt="Asset Animation" class="works__image" loading="lazy" />
+      <img src="../../assets/images/ppsfinalsub2.png" alt="Asset App & Web" class="works__image" loading="lazy" />
     </div>
 
-    <div class="works-grid">
+    <div class="works-grid works-grid--3x1">
       <div class="works-card works-card--portrait">
-        <a href="anim1.html" class="works-card__link">
-          <img src="assets/images/Animation/ppsfilesub3-01.png" alt="Queen of Pentacles Inspired Tarot Card" loading="lazy" />
+        <a href="../animation/queen-tarot.html" class="works-card__link">
+          <img src="../../assets/images/AppWeb/ppsfileapp1.png" alt="Project 1" />
         </a>
       </div>
 
-      <div class="works-card works-card--landscape">
-        <a href="anim2.html" class="works-card__link">
-          <img src="assets/images/Animation/ppsfilesub3-02.png" alt="AH PEK" loading="lazy" />
+      <div class="works-card works-card--portrait">
+        <a href="../animation/ah-pek.html" class="works-card__link">
+          <img src="../../assets/images/AppWeb/ppsfileapp2.png" alt="Project 2" />
+        </a>
+      </div>
+
+      <div class="works-card works-card--portrait">
+        <a href="../animation/queen-tarot.html" class="works-card__link">
+          <img src="../../assets/images/AppWeb/ppsfileapp3.png" alt="Project 3" />
         </a>
       </div>
     </div>
@@ -86,8 +86,8 @@
     </section>
   </section>
 
-  <script src="js/nav.js"></script>
-  <script src="js/reveal.js"></script>
+  <script src="../../js/nav.js"></script>
+  <script src="../../js/reveal.js"></script>
 </body>
 
 </html>

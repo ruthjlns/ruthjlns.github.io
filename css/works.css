@@ -71,3 +71,51 @@
     width: 100%;
   }
 }
+
+.works-grid {
+  position: absolute;
+  bottom: 18%;        /* sits above the contact section */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 16px;
+  width: 88%;
+  max-width: 860px;
+}
+
+.works-card {
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.works-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+}
+
+.works-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Portrait card — taller, like the Queen poster */
+.works-card--portrait {
+  aspect-ratio: 3 / 4;
+}
+
+/* Landscape card — white bg, image contained, like the Smash card */
+.works-card--landscape {
+  aspect-ratio: 3 / 2;
+  background: #ffffff;
+}
+
+.works-card--landscape img {
+  object-fit: contain;
+  padding: 16px;
+}

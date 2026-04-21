@@ -20,11 +20,24 @@
     <link rel="stylesheet" href="css/animations.css" />
 
     <style>
-        /* Always dark nav background for light-background pages */
-        #nav {
-            background: rgba(15, 31, 61, 0.85) !important;
-            backdrop-filter: blur(12px) !important;
-            -webkit-backdrop-filter: blur(12px) !important;
+        /* Dark links on transparent nav for light-background pages */
+        #nav .nav__link,
+        #nav .nav__dropdown-link {
+            color: #111 !important;
+        }
+
+        #nav .nav__link::after {
+            background: #111 !important;
+        }
+
+        /* Once scrolled, nav gets dark bg so links go white */
+        #nav.scrolled .nav__link,
+        #nav.scrolled .nav__dropdown-link {
+            color: var(--color-white) !important;
+        }
+
+        #nav.scrolled .nav__link::after {
+            background: var(--color-white) !important;
         }
     </style>
 </head>
@@ -48,23 +61,12 @@
         </ul>
     </nav>
 
-    <!-- HERO SECTION (Fixed overlay - OUTSIDE works) -->
-    <section class="hero hero--small" id="about">
-        <div class="hero__content" style="margin-top: 20px; left: 50px; top: 60px;">
-            <h1 class="hero__title reveal delay-1">mlaku surabaya</h1>
-            <h1 class="hero__title reveal delay-1">passport</h1>
-        </div>
-        <div class="hero__content hero__content--bottom" style="margin-top: 20px; left: 50px; top: 80px;">
-            <p class="hero__name reveal">year accomplished: 2025</p>
-            <p class="hero__name reveal">role: layouting & copy writing - group work</p>
-        </div>
-    </section>
-
     <!-- MAIN WORKS CONTAINER (Scrollable) -->
     <section class="works" id="works">
         <!-- Background Image -->
         <div class="works__container">
-            <img src="assets/images/ppsproduct4.png" alt="mlaku surabaya passport" class="works__image" loading="lazy" />
+            <img src="assets/images/ppsproduct4.png" alt="mlaku surabaya passport" class="works__image"
+                loading="lazy" />
         </div>
 
         <!-- CONTACT SECTION -->

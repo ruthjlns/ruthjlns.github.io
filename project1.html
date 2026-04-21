@@ -20,11 +20,24 @@
     <link rel="stylesheet" href="css/animations.css" />
 
     <style>
-        /* Always dark nav background for light-background pages */
-        #nav {
-            background: rgba(15, 31, 61, 0.85) !important;
-            backdrop-filter: blur(12px) !important;
-            -webkit-backdrop-filter: blur(12px) !important;
+        /* Dark links on transparent nav for light-background pages */
+        #nav .nav__link,
+        #nav .nav__dropdown-link {
+            color: #111 !important;
+        }
+
+        #nav .nav__link::after {
+            background: #111 !important;
+        }
+
+        /* Once scrolled, nav gets dark bg so links go white */
+        #nav.scrolled .nav__link,
+        #nav.scrolled .nav__dropdown-link {
+            color: var(--color-white) !important;
+        }
+
+        #nav.scrolled .nav__link::after {
+            background: var(--color-white) !important;
         }
     </style>
 </head>

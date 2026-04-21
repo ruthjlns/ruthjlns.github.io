@@ -5,6 +5,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'SansSerifBookFlf';
+  src: url('../assets/fonts/sansserifflf-font/Sansserifbookflf-Da7W.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
   font-family: var(--font-sans);

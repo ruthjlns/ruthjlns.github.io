@@ -9,9 +9,11 @@
 
   /* Typography */
   --font-serif:   'Cormorant Garamond', Georgia, serif;
-  --font-sans:    'DM Sans', sans-serif;
+  font-family: var(--font-sans-serif-book);
   --font-script:  'Pinyon Script', cursive;
-  --font-ethika:  'Ethika', sans-serif;
+  --font-ethika: 'Ethika', serif;
+  --font-sans-serif-book: 'SansSerifBookFlf', sans-serif;
+}
 
   /* Spacing */
   --space-xs:  0.5rem;

@@ -8,12 +8,11 @@
   --color-dark:   #111111;
 
   /* Typography */
-  --font-serif:   'Cormorant Garamond', Georgia, serif;
-  font-family: var(--font-sans-serif-book);
-  --font-script:  'Pinyon Script', cursive;
-  --font-ethika: 'Ethika', serif;
-  --font-sans-serif-book: 'SansSerifBookFlf', sans-serif;
-}
+  --font-serif:             'Cormorant Garamond', Georgia, serif;
+  --font-sans:              'DM Sans', sans-serif;
+  --font-script:            'Pinyon Script', cursive;
+  --font-ethika:            'Ethika', sans-serif;
+  --font-sans-serif-book:   'SansSerifBookFlf', sans-serif;  /* ← add this */
 
   /* Spacing */
   --space-xs:  0.5rem;

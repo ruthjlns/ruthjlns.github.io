@@ -33,7 +33,7 @@
 }
 
 .nav__link {
-  font-family: var(--font-sans);
+  font-family: var(--font-sans-serif-book);
   font-size: 0.85rem;
   font-weight: 400;
   letter-spacing: 0.08em;
@@ -95,7 +95,7 @@
 .nav__dropdown-link {
   display: block;
   padding: var(--space-sm) var(--space-md);
-  font-family: var(--font-sans);
+  font-family: var(--font-sans-serif-book);
   font-size: 0.8rem;
   font-weight: 400;
   letter-spacing: 0.08em;

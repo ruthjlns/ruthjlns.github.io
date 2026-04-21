@@ -135,3 +135,9 @@
     position: relative;
     width: 100%;
 }
+
+/* Modifier for the 3x1 Portrait layout */
+.works-grid--3x1 {
+  grid-template-columns: repeat(3, 1fr) !important;
+  bottom: 15%; /* Optional: adjust if 3 items need more vertical room */
+}

@@ -83,7 +83,7 @@
   grid-template-columns: 1fr 2fr;
   gap: 16px;
   width: 88%;
-  align-items: start;
+  align-items: stretch;
 }
 
 .works-card {
@@ -98,15 +98,19 @@
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
 }
 
-.works-card--portrait img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
+.works-card--portrait {
+  aspect-ratio: 3 / 4;
 }
 
 .works-card--landscape {
+  background: #ffffff;
+}
+
+.works-card--portrait img {
+  width: 100%;
   height: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 .works-card--landscape img {

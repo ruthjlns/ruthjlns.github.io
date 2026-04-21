@@ -83,6 +83,7 @@
   grid-template-columns: 1fr 2fr;
   gap: 16px;
   width: 88%;
+  align-items: stretch;
 }
 
 .works-card {
@@ -90,6 +91,7 @@
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 400px;
 }
 
 .works-card:hover {
@@ -100,14 +102,13 @@
 .works-card img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
   display: block;
 }
 
-.works-card--portrait {
-  /* natural height from image */
+.works-card--portrait img {
+  object-fit: cover;
 }
 
-.works-card--landscape {
-  /* natural height, transparent bg */
+.works-card--landscape img {
+  object-fit: contain;
 }
